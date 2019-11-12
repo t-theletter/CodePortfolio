@@ -4,6 +4,8 @@ Welcome to Code 2
 Your Project
 ------------
 
+### Make a camera filter
+
 ### What is an algorithm?
 
 ### RRS
