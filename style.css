@@ -9,8 +9,14 @@ h1 {
   color: #373fff;
 }
 
+ul {
+  margin:0;
+  padding:0;
+  
+}
+
 li {
   list-style-type: none;
-  
+  padding-bottom: 1em;
   
 }
