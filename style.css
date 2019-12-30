@@ -8,3 +8,9 @@ body {
 h1 {
   color: #373fff;
 }
+
+li {
+  list-style-type: none;
+  
+  
+}
