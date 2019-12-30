@@ -7,6 +7,16 @@ body {
 
 h1 {
   color: #373fff;
+  font-size: 18pt;
+}
+
+.nav {
+  width: 30%;
+  background-color:red;
+}
+
+.content {
+  width: 70%;
 }
 
 ul {
@@ -16,10 +26,12 @@ ul {
 }
 
 li {
+  font-size: 14pt;
   list-style-type: none;
   padding-bottom: 1em;
 }
 
 li a {
-  
+  color: black;
+  text-decoration: none;
 }
