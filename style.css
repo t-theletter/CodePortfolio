@@ -18,5 +18,8 @@ ul {
 li {
   list-style-type: none;
   padding-bottom: 1em;
+}
+
+li a {
   
 }
