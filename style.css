@@ -1,13 +1,19 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   margin: 2em;
 }
 
 h1 {
   color: #373fff;
   font-size: 18pt;
+}
+
+p{
+  font-size: 12pt;
+  line-height:18pt;
+  
 }
 
 .nav {
