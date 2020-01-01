@@ -18,11 +18,16 @@ p{
 
 .nav {
   width: 30%;
+  display: inline-block;
+  float: left;
   background-color:red;
 }
 
 .content {
   width: 70%;
+  display: inline-block;
+  float: left;
+  background-color:yellow;
 }
 
 ul {
