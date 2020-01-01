@@ -17,14 +17,16 @@ p{
 }
 
 .nav {
-  width: 30%;
+  padding: 2%;
+  width: 26%;
   display: inline-block;
   float: left;
   background-color:red;
 }
 
 .content {
-  width: 70%;
+  padding: 2%;
+  width: 66%;
   display: inline-block;
   float: left;
   background-color:yellow;
