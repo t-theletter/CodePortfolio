@@ -24,7 +24,7 @@ p{
   height: 100%;
   display: inline-block;
   float: left;
-  background-color:red;
+/*   background-color:red; */
 }
 
 .content {
@@ -32,7 +32,7 @@ p{
   width: 66%;
   display: inline-block;
   float: left;
-  background-color:yellow;
+/*   background-color:yellow; */
 }
 
 ul {

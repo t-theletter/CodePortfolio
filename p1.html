@@ -57,9 +57,15 @@
         (2) Add the “Embed” sketch link to the Project #1 Glitch page
       </p>
 
-      <h2>Historical Overview</h2>
-
-      <h2>References</h2>
+      <h2>Background</h2>
+      
+      <h3>Modular Design</h3>
+      
+      <div class="full-width-box">
+        <img
+          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F2020.gif?v=1578094786837"
+        />
+      </div>
 
       <h3>What is a keyframe?</h3>
 
@@ -76,44 +82,47 @@
         position of keyframes on an animation timeline has an overpowering
         effect on how timing and movement is experienced.
       </p>
-      
-            <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
-      
-      <a href="https://editor.p5js.org/xinxin/sketches/-uliLUmcU">Source Code</a>
+
+      <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
+
+      <a href="https://editor.p5js.org/xinxin/sketches/-uliLUmcU"
+        >Source Code</a
+      >
 
       <p>
         In p5, we can create simple keyframe animations using the conditional
-        statements. In the example sketch above, the ball transitions between keyframe A and B, and that is controlled by an if... else if statement:
+        statements. In the example sketch above, the ball transitions between
+        keyframe A and B, and that is controlled by an if... else if statement:
       </p>
-      
+
       <code>
-        x = x + speed; <br>
-        if (x > width - 50){<br> 
-        speed = -1; <br> 
-        } <br>
-        else if (x == 50){ <br>
-        speed = 1; <br>
+        x = x + speed; <br />
+        if (x > width - 50){<br />
+        speed = -1; <br />
+        } <br />
+        else if (x == 50){ <br />
+        speed = 1; <br />
         }
       </code>
-      
 
       <p>
         However, you might find the conditional statements limiting when you
-        want to choreograph a more complicated animation. See the example below, what if we want the ball to bounce from A to B, then back to A and then to C?
-      </p>
-      
-      <iframe src="https://editor.p5js.org/xinxin/embed/6rD8OGH64"></iframe>
-      
-            <p>
-        When the ellipse returns to A the second time, we have to find a way to tell it to go up to C instead of back to B. This is difficult in our current code 
-              In the past we might have created a boolean variable, so that when 
+        want to choreograph a more complicated animation. See the example below,
+        what if we want the ball to coontinously bounce between A - B - A - C -
+        A, and continuosloy drawing an "L" on the screen?
       </p>
 
-      <div class="full-width-box">
-        <img
-          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F2020.gif?v=1578094786837"
-        />
-      </div>
+      <iframe src="https://editor.p5js.org/xinxin/embed/6rD8OGH64"></iframe>
+
+      <p>
+        This takes a bit of creativity -- when the ellipse returns to A the
+        second time, we have to find a way to tell it to go up to C instead of
+        back to B. One way to approach this is to create a boolean variable, so
+        that an additional true / false condition can let the computer know when
+        to go to B and when to go to C when x == 50. However, for this project
+        you will learn how to use the switch statement to solve a problem like
+        this.
+      </p>
 
       <h2>Tutorial</h2>
       <h3>switch Statement</h3>
