@@ -76,10 +76,23 @@
         position of keyframes on an animation timeline has an overpowering
         effect on how timing and movement is experienced.
       </p>
-      
-      <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
+
       <p>
-        In p5, we achieve keyframe animations using conditional statements. The sketch above is achieved using an if... else statement. However 
+        In p5, we can create simple keyframe animations using the conditional
+        statements. For example, the bouncy ball effect below is achieved using
+        an if... else if statement. In the sketch, the ellipse relies on this
+        block of code to bounce back and forth:
+      </p>
+      <code>
+        x = x + speed; <br>
+        if (x > width - 50) { speed = -1; } else if (x == 50) {
+        speed = 1; }
+      </code>
+      <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
+
+      <p>
+        However, you might find the conditional statements limiting when you
+        want to create a more complicated animation. For example,
       </p>
 
       <div class="full-width-box">
