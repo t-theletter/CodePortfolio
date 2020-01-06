@@ -67,16 +67,11 @@
         quickly. Here's a
         <a href="https://editor.p5js.org/xinxin/sketches/ujBIbOWPj">template</a>
         I've created to help you get started. <br />
-        On the template, you'd see that I have created a 4 x 4 grid using a
-        nested for Loop. The <b>const cellnum</b> variable defines the number of
-        rows and columns and <b>const g</b> defines the width and height of the
-        cells. Please change these values to draw a grid based on your own
-        design needs.
       </p>
       <div class="full-width-box">
         <iframe src="https://editor.p5js.org/xinxin/embed/ujBIbOWPj"></iframe>
-        <p>
-          
+        <p> In the source code, you'd see that I have created a grid using a
+        nested for Loop:
         </p>
         <code>
             for (let i = 0; i < cellnum; i++) {<br />
@@ -88,12 +83,19 @@
           }<br />
           
           function example(x, y) {<br />
-  strokeWeight(5);<br />
-  stroke(255, 255, 0);<br />
+  ...<br />
   line(x, y, x + g, y + g)<br />
 }
           
         </code>
+        <p>
+          By looking at the numbers labeled on the grid, I can instruct the program to draws a diagonal line onto row 1, column 1 on the grid by adding <code>if(i == 1 & j == 1)</code> in the nested for loop. <br>
+          
+          The <b>const cellnum</b> variable defines the number of
+        rows and columns and <b>const g</b> defines the width and height of the
+        cells. Change these values to draw a grid based on your own
+        design needs.
+        </p>
       </div>
       <h2>Background</h2>
 
