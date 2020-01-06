@@ -63,21 +63,57 @@
         (1) Submit your “Edit” sketch link to Canvas Project #1<br />
         (2) Add the “Embed” sketch link to the Project #1 Glitch page
       </p>
+  
+      <h2>Course Materials</h2>
 
       <h3>Modular Design</h3>
 
-      <h3>Blend Mode</h3>
-      <iframe src="https://editor.p5js.org/xinxin/embed/5NhLJj33Y"></iframe>
-      <p>MULTIPLY multiplies the colors. The result will always be darker.</p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/qdfjVs0bT"></iframe>
+      <h3>Creating keyframe animation in p5.js</h3>
+
+      <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
+
       <p>
-        SCREEN is the opposite of MULTIPLY, uses inverse values of the colors.
+        In p5, we can create simple keyframe animations using the conditional
+        statements. In the example sketch above, the ball transitions between
+        keyframe A and B, and that is controlled by an if... else if statement:
       </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/YwwtbKvSo"></iframe>
+
+      <script src="https://gist.github.com/xinemata/3878cd4afcb4649560d1b0a3f976f237.js"></script>
+      <a href="https://editor.p5js.org/xinxin/sketches/-uliLUmcU"
+        >Link to Source Code</a
+      >
+
       <p>
-        OVERLAY mixes MULTIPLY and SCREEN by multiplying dark values and
-        screening light values.
+        However, you might find the conditional statements limiting when you
+        want to choreograph a more complicated animation. See the example below,
+        what if we want the ball to coontinously bounce between A - B - A - C -
+        A, and continuosloy drawing an "L" on the screen?
       </p>
+
+      <iframe src="https://editor.p5js.org/xinxin/embed/6rD8OGH64"></iframe>
+
+      <p>
+        This takes a bit of creativity -- when the ellipse returns to A the
+        second time, we have to find a way to tell it to go up to C instead of
+        back to B. One way to approach this is to create a boolean variable, so
+        that an additional true / false condition can let the computer know when
+        to go to B and when to go to C under the condition of x == 50. However,
+        for this project you will learn how to use the switch statement to solve
+        a problem like this.
+      </p>
+  
+      <h3>JavaScript switch Statement</h3>
+
+      <p>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
+          >More information on switch</a
+        >
+      </p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/9bUX2-N0K"></iframe>
+      <iframe src="https://editor.p5js.org/xinxin/embed/GCqaGeo3r"></iframe>
+
+      <h2>FAQ</h2>
 
       <h3>What is a keyframe?</h3>
 
@@ -116,50 +152,18 @@
           src="https://i.pinimg.com/originals/44/c3/70/44c3709dc50a93dcd10a456324fb2ff8.jpg"
         />
       </div>
-
-      <h3>Creating keyframe animation in p5.js</h3>
-
-      <iframe src="https://editor.p5js.org/xinxin/embed/-uliLUmcU"></iframe>
-
+      <h3>What is Blend Mode?</h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/5NhLJj33Y"></iframe>
+      <p>MULTIPLY multiplies the colors. The result will always be darker.</p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/qdfjVs0bT"></iframe>
       <p>
-        In p5, we can create simple keyframe animations using the conditional
-        statements. In the example sketch above, the ball transitions between
-        keyframe A and B, and that is controlled by an if... else if statement:
+        SCREEN is the opposite of MULTIPLY, uses inverse values of the colors.
       </p>
-
-<script src="https://gist.github.com/xinemata/3878cd4afcb4649560d1b0a3f976f237.js"></script>
-  <a href="https://editor.p5js.org/xinxin/sketches/-uliLUmcU">Link to Source Code</a>
-
+      <iframe src="https://editor.p5js.org/xinxin/embed/YwwtbKvSo"></iframe>
       <p>
-        However, you might find the conditional statements limiting when you
-        want to choreograph a more complicated animation. See the example below,
-        what if we want the ball to coontinously bounce between A - B - A - C -
-        A, and continuosloy drawing an "L" on the screen?
+        OVERLAY mixes MULTIPLY and SCREEN by multiplying dark values and
+        screening light values.
       </p>
-
-      <iframe src="https://editor.p5js.org/xinxin/embed/6rD8OGH64"></iframe>
-
-      <p>
-        This takes a bit of creativity -- when the ellipse returns to A the
-        second time, we have to find a way to tell it to go up to C instead of
-        back to B. One way to approach this is to create a boolean variable, so
-        that an additional true / false condition can let the computer know when
-        to go to B and when to go to C under the condition of x == 50. However,
-        for this project you will learn how to use the switch statement to solve
-        a problem like this.
-      </p>
-
-      <h2>Tutorial</h2>
-      <h3>JavaScript switch Statement</h3>
-
-      <p>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
-          >More information on switch</a
-        >
-      </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/9bUX2-N0K"></iframe>
-      <iframe src="https://editor.p5js.org/xinxin/embed/GCqaGeo3r"></iframe>
     </div>
   </body>
 </html>
