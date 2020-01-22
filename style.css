@@ -17,22 +17,22 @@ p {
   line-height: 18pt;
 }
 
-#left {
+.left {
   width: 15%;
   padding: 1%;
   float: left;
   display: inline-block;
-  background-color: red;
+/*   background-color: red; */
 }
 
-#center {
+.center {
   width: 15%;
   padding: 1%;
   float: left;
   display: inline-block;
 }
 
-#right {
+.right {
   width: 60%;
   padding: 1%;
   float: left;
@@ -45,14 +45,14 @@ p {
   height: 100%;
   display: inline-block;
   float: left;
-  /*   background-color:red; */
+/*     background-color:red; */
 }
 
 .content {
   padding: 2%;
   width: 66%;
   display: inline-block;
-  float: left;
+  float: right;
   /*   background-color:yellow; */
 }
 
