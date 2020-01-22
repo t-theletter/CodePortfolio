@@ -1,10 +1,10 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   margin: 2em;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -12,10 +12,31 @@ h1 {
   font-size: 18pt;
 }
 
-p{
+p {
   font-size: 12pt;
-  line-height:18pt;
-  
+  line-height: 18pt;
+}
+
+#left {
+  width: 15%;
+  padding: 1%;
+  float: left;
+  display: inline-block;
+  background-color: red;
+}
+
+#center {
+  width: 15%;
+  padding: 1%;
+  float: left;
+  display: inline-block;
+}
+
+#right {
+  width: 60%;
+  padding: 1%;
+  float: left;
+  display: inline-block;
 }
 
 .nav {
@@ -24,7 +45,7 @@ p{
   height: 100%;
   display: inline-block;
   float: left;
-/*   background-color:red; */
+  /*   background-color:red; */
 }
 
 .content {
@@ -32,13 +53,12 @@ p{
   width: 66%;
   display: inline-block;
   float: left;
-/*   background-color:yellow; */
+  /*   background-color:yellow; */
 }
 
 ul {
-  margin:0;
-  padding:0;
-  
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -49,10 +69,10 @@ li {
 
 li a {
   color: black;
-/*   text-decoration: none; */
+  /*   text-decoration: none; */
 }
 
-iframe { 
+iframe {
   margin: 0;
   padding: 0;
   border: none;
@@ -60,68 +80,67 @@ iframe {
   height: 400px;
   display: inline-block;
   float: left;
-  margin-bottom:2%;
+  margin-bottom: 2%;
 }
 
-
-.full-width-box{
-  width:100%;
-  margin-bottom:2%;
+.full-width-box {
+  width: 100%;
+  margin-bottom: 2%;
   display: inline-block;
   float: left;
 }
 
-img{
-  height:400px;
+img {
+  height: 400px;
   display: inline-block;
   float: left;
-  margin-bottom:2%;
-  margin-right:2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
 }
 
 body .gist .gist-file {
-    margin-bottom: 0;
-    border: 1px dashed #adb5bd;
-    border-radius: 0;
+  margin-bottom: 0;
+  border: 1px dashed #adb5bd;
+  border-radius: 0;
 }
 
 body .gist .gist-data {
-    border-bottom: none;
-    border-radius: 0;
-    background-color: #f1f3f5;
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #f1f3f5;
 }
 
 body .gist .blob-wrapper {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 body .gist .highlight {
-    background-color: transparent;
-    font-family: 'Droid Sans Mono', monospace;
-    font-size: 14px;
+  background-color: transparent;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 14px;
 }
 
 body .gist .highlight td {
-    padding: 5px 15px !important;
-    line-height: 1;
-    font-family: inherit;
-    font-size: inherit;
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 body .gist tr:first-child td {
-    padding-top: 15px !important;
+  padding-top: 15px !important;
 }
 
 body .gist tr:last-child td {
-    padding-bottom: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 body .gist .blob-num {
-    color: #ced4da;
-    background-color: #495057;
-    pointer-events: none;
+  color: #ced4da;
+  background-color: #495057;
+  pointer-events: none;
 }
 
 body .gist .gist-meta {
-    display: none;
+  display: none;
 }
