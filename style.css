@@ -69,9 +69,13 @@ li {
 
 li.bullet {
   list-style-type: '- ';
-  margin:0;
+  margin:1%;
   padding:0;
   
+}
+
+li.bullet a{
+  color: blue;
 }
 
 li a {
