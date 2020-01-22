@@ -10,6 +10,13 @@ body {
 h1 {
   color: #373fff;
   font-size: 18pt;
+  
+}
+
+h2{
+  font-size:18pt;
+  margin:0;
+  padding:0;
 }
 
 p {
@@ -19,7 +26,7 @@ p {
 
 .left {
   width: 15%;
-  padding: 1%;
+  padding: 1% 1% 1% 0;
   float: left;
   display: inline-block;
 /*   background-color: red; */
