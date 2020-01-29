@@ -401,9 +401,16 @@
       <script src="https://gist.github.com/xinemata/551cc553fc031e1475ee34656ece23c5.js"></script>
       
       <p>
-        There are three pairs of numbers we are working with here: <i>start1</i>, <i>stop1</i> / <i>start2</i>, <i>stop2</i> / <i>value</i>, <i>myVariable</i>. 
+        There are three pairs of numbers at work here: </p>
+      <ul>
+        <li>(1) Minimum (<i>start1</i>) and maximum (<i>stop1</i>) values of the first range</li>
+             <li> (2) Minimum (<i>start2</i>) and maximum (<i>stop2</i>) values of the second range</li>
+        <li> (3) The input value (<i>value</i>), which get compared to the <i>start1</i> and <i>stop1</i> range, and the final outcome (<i>myVariable</i>), which gets caculated based on the relationship between (1) and (2)</li>
+      </ul>
+
+      <p>
         
-        By using map(), we can calculate a number (<i>myVariable</i>)
+        If that was hella confusing, try taking a look at this example: 
       </p>
       
       <iframe src="https://editor.p5js.org/xinxin/embed/VdQVV3y9"></iframe>
