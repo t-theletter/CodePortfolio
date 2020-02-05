@@ -268,10 +268,27 @@
         When you make changes to sampleFactor, just keep in mind that it's very sensitive, and most of the time you'd only want to make changes that are within a decimal range. 
       </p>
       
-      <h3>Connecting the Vertecies using beginShape()</h3>
+      <h3>Connecting the Vertecies using beginShape() and endShape()</h3>
       
       <p>
-        What if you want to draw the outline of the font by connecting all the vertecies together? A great function we could use is something called beginShape() 
+        What if you want to draw the outline of the font by connecting all the vertecies together? A great function we could use is something called <a href = "https://p5js.org/reference/#/p5/beginShape">beginShape() and endShape()</a>. These are the magical functions that connects all the vertecies you provide to the function into a complex shape. Usually it is written this way:
+      </p>
+      
+      <script src="https://gist.github.com/xinemata/ccf95d1b4df306085e4617dca00a4209.js"></script>
+      
+      <p>
+        But since we already have all the x and y information we need contained inside the <i>hiArray</i> variable, we could just use that inside <i>vertex(x,y)</i>. Here's how you would write it: 
+      </p>
+      
+      <script src="https://gist.github.com/xinemata/0882b4ed59087d0c575c064890cea1f6.js"></script>
+      
+      <p>
+        And it creates this!
+      </p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/oAeVCLQl"></iframe>
+      
+      <p>
+        As you can see, beginShape() and endShape() treats both "h" and "i" as one shape and attempted to connect both together. If you'd like the two to be separated, you have to create two individual textToPoints arrays and two sets of beginSha
       </p>
       
       <h3>textToPoints Morph</h3>
