@@ -218,8 +218,19 @@
           <li>(4) fontSize: the forth parameter takes a font size value</li>
           <li>(5) sampleFactor: the fifth parameter is the most important one to understand here. It defines how many points to draw along the text. The defacult value is 0.1, the higher number you enter here results in higher resolution, and lower number results in lower resolution</li>
       </ul>
+      
+      <p>
+        Now if you print the variable <i>hiArray</i> in the program, you are going to get a funny message in the p5 console:
+      </p>
+   <div class="full-width-box">
+      <img src = "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-02-05%20at%201.40.37%20PM.png?v=1580928078985">
+      </div>
+      <p>
+        Our <i>hiArray</i> variable has taken all the vertecies from the text and turned it into an array of objects. Each of these objects inside the array contains a variable x and a variable  y. Meaning if you open array of objects up you would see [(x,y),(x,y),(x,y)] Amazing!
 
-      <h4>Changing the Number of Vertecies</h4>
+      </p>
+      
+      <h4>Changing Number of Vertecies</h4>
 
       <iframe src="https://editor.p5js.org/xinxin/embed/4jQwsJvN"></iframe>
       <p>&#8627; use UP / DOWN keys to adjust the number of vertecies.</p>
