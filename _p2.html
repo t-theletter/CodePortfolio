@@ -77,7 +77,7 @@
 
       <h2>Design Constraints</h2>
       <p>
-        (1) Your canvas size should be 600px * 600px <br/>
+        (1) Your canvas size should be 600px * 600px <br />
         (2) Use one of the fonts provided in the study guide
       </p>
 
@@ -125,24 +125,71 @@
       <h3>textToPoints() Basics</h3>
       <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe>
       <p>
-        textToPoints() is a function in p5 that converts text into points on the screen. It’s an exciting feature that will allow us to manipulate type in new and surprising ways. In order for textToPoints() to work, you have to use a specific font format called OpenType font (OTF) in your sketches. Here are a couple direct links for you to download OTF fonts:
+        textToPoints() is a function in p5 that converts text into points on the
+        screen. It’s an exciting feature that will allow us to manipulate type
+        in new and surprising ways. In order for textToPoints() to work, you
+        have to use a specific font format called OpenType font (OTF) in your
+        sketches. Here are a couple direct links for you to download OTF fonts:
       </p>
       <ul>
-        <li class ="bullet"><a href= "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2Fthumbnails%2Fgrotesk.otf?1580920752167">Copenhagen Grotesk Nova</a></li>
-                <li class ="bullet"><a href= "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FMyriadPro-Bold.otf?v=1580920444531">Myriad Pro</a></li>
-                <li class ="bullet"><a href= "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FLetterGothicStd.otf?v=1580920712952">Letter Gothic</a></li>
+        <li class="bullet">
+          <a
+            href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2Fthumbnails%2Fgrotesk.otf?1580920752167"
+            >Copenhagen Grotesk Nova</a
+          >
+        </li>
+        <li class="bullet">
+          <a
+            href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FMyriadPro-Bold.otf?v=1580920444531"
+            >Myriad Pro</a
+          >
+        </li>
+        <li class="bullet">
+          <a
+            href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FLetterGothicStd.otf?v=1580920712952"
+            >Letter Gothic</a
+          >
+        </li>
       </ul>
       <h4>
         Loading Font
       </h4>
-      
-      <p>
-        Once you download the files to your computer, open the p5 web editor. Go to Sketch &gt; Add File and drag an OTF file to the dialogue box. Once it’s uploaded you should see the file showing up in your sketch folder on the left side of the editor.
-      
-<img src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-02-05%20at%2012.27.52%20PM.png?v=1580923684682">
-Now to load the font file, you need to create a global variable to hold the font and also create a preload function. The preload() function should be placed before the setup() function. It makes sure that your font is loaded before the browser loads the rest of the website. 
-      </p>
 
+      <p>
+        Once you download the files to your computer, open the p5 web editor. Go
+        to Sketch &gt; Add File and drag an OTF file to the dialogue box. Once
+        it’s uploaded you should see the file showing up in your sketch folder
+        on the left side of the editor.
+      </p>
+      <div class="full-width-box">
+        <img
+          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-02-05%20at%2012.27.52%20PM.png?v=1580923684682"
+        />
+      </div>
+      <p>
+        Now to load the font file, you need to create a global variable to hold
+        the font and also load the font file from the preload() function.
+        Comparable to setup() and draw(), the preload() function makes sure that
+        your font is loaded before the browser loads the rest of the website.
+        <br />
+        <br />
+        The preload() function should be placed before the setup() function:
+      </p>
+      <script src="https://gist.github.com/xinemata/044b9377547ce54ebf49269a3cd38a9c.js"></script>
+      
+            <h4>
+        Displaying Font
+      </h4>
+
+      <p>
+        Once you have your OTF font loaded we can begin to display it. You can simply do this by adding this line in your draw():
+      </p>
+      <script src="https://gist.github.com/xinemata/1068ef1f0b4c11223f722c6a93b1be31.js"></script>
+      
+            <p>
+        Now, there are <a href ="https://p5js.org/reference/#group-Typography>a number of p5 functions"></a> you can use to tweak the basic look of the font. Such as changing color, stroke, size, alignment, text width. I will let you explore this part on your own. 
+      </p>
+      
     </div>
   </body>
 </html>
