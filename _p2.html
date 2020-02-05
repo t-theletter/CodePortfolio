@@ -205,16 +205,19 @@
       </p>
       
       <script src="https://gist.github.com/xinemata/69247c6c1441f18fc65f419086674b4d.js"></script>
-
+      
       <p>
-        there are
-        <a href="https://p5js.org/reference/#group-Typography"
-          >a number of p5 functions</a
-        >
-        you can use to tweak the basic attributes of the typography. I will let
-        you explore this part on your own so that we can spend more time on
-        textToPoints().
+        There are five parameters inside the textToPoints function here. Let's break it down one by one:
+
       </p>
+        
+        <ul>
+          <li>(1) txt: the first parameter takes a string of text</li>
+          <li>(2) x: the second parameter takes a x position value</li>
+          <li>(3) y: the third parameter takes a y position value</li>
+          <li>(4) fontSize: the forth parameter takes a font size value</li>
+          <li>(5) sampleFactor: the fifth parameter is the most important one to understand here. It defines how many points to draw along the text. The defacult value is 0.1, the higher number you enter here results in higher resolution, and lower number results in lower resolution</li>
+      </ul>
 
       <h4>Changing the Number of Vertecies</h4>
 
