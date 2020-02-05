@@ -116,10 +116,12 @@
         <br />
         (6) Laurent Malys's
         <a href="https://www.instagram.com/laurent.malys/"> IG</a>
-                <br />
+        <br />
         (7) Type Me, Type Me Not
-        <a href="https://www.typotopo.com/typemenot/index.html"> by Peter Cho</a>
-                <br />
+        <a href="https://www.typotopo.com/typemenot/index.html">
+          by Peter Cho</a
+        >
+        <br />
         (8) Laurent Malys's
         <a href="https://www.instagram.com/laurent.malys/"> IG</a>
       </p>
@@ -131,11 +133,14 @@
       <h3>textToPoints() Basics</h3>
       <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe>
       <p>
-        textToPoints() is a function in p5 that converts text into points on the
-        screen. It’s an exciting feature that will allow us to manipulate type
-        in new and surprising ways. In order for textToPoints() to work, you
-        have to use a specific font format called OpenType font (OTF) in your
-        sketches. Here are a couple direct links for you to download OTF fonts:
+        <a href="https://p5js.org/reference/#/p5.Font/textToPoints"
+          >textToPoints()</a
+        >
+        is a function in p5 that converts text into points on the screen. It’s
+        an exciting feature that will allow us to manipulate type in new and
+        surprising ways. In order for textToPoints() to work, you have to use a
+        specific font format called OpenType font (OTF) in your sketches. Here
+        are a couple direct links for you to download OTF fonts:
       </p>
       <ul>
         <li class="bullet">
@@ -182,31 +187,48 @@
         The preload() function should be placed before the setup() function:
       </p>
       <script src="https://gist.github.com/xinemata/044b9377547ce54ebf49269a3cd38a9c.js"></script>
-      
-            <h4>
+
+      <h4>
         Displaying Font
       </h4>
 
       <p>
-        Once you have your OTF font loaded we can begin to display it. You can simply do this by adding this line in your draw():
+        Once you have your OTF font loaded we can begin to display it. You can
+        simply do this by adding this line in your draw():
       </p>
       <script src="https://gist.github.com/xinemata/1068ef1f0b4c11223f722c6a93b1be31.js"></script>
-      
-            <p>
-        Now, there are <a href ="https://p5js.org/reference/#group-Typography">a number of p5 functions</a> you can use to tweak the basic attributes of the typography. I will let you explore this part on your own so that we can spend more time on textToPoints().
+
+      <p>
+        Now let's intergrate textToPoints() into the progarm and convert the
+        pre-exisiting vertices inside our word into points. <br><br>
+        To do this, you will need to create a new variable that holds the textToPoints() array:
       </p>
       
-      
-           <h4>Changing the Number of Vertecies</h4>
-    
-    <iframe src="https://editor.p5js.org/xinxin/embed/4jQwsJvN"></iframe>
-    <p>&#8627; use UP / DOWN keys to adjust the number of vertecies.</p>
-      
+      <script src="https://gist.github.com/xinemata/69247c6c1441f18fc65f419086674b4d.js"></script>
+
+      <p>
+        there are
+        <a href="https://p5js.org/reference/#group-Typography"
+          >a number of p5 functions</a
+        >
+        you can use to tweak the basic attributes of the typography. I will let
+        you explore this part on your own so that we can spend more time on
+        textToPoints().
+      </p>
+
+      <h4>Changing the Number of Vertecies</h4>
+
+      <iframe src="https://editor.p5js.org/xinxin/embed/4jQwsJvN"></iframe>
+      <p>&#8627; use UP / DOWN keys to adjust the number of vertecies.</p>
+
       <h3>textToPoints Morph</h3>
-  <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
+      <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
       <p>&#8627; click to "mop" the screen</p>
       <iframe src="https://editor.p5js.org/xinxin/embed/U_g3rWq0"></iframe>
-       <p>&#8627; click to morph C to A</p>
+      <p>&#8627; click to morph C to A</p>
+
+      <!--         <h3>Next Week</h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/8HR7jS5Y"></iframe> -->
     </div>
   </body>
 </html>
