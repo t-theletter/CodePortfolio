@@ -304,14 +304,17 @@
       <h3>Connecting the Vertecies using beginShape() and endShape()</h3>
 
       <p>
-         You might remember this childhood game called Connect the Dots. It is a form of puzzle containing a sequence of numbered dots. When a line is drawn connecting the dots the outline of an object is revealed.
+         You might remember this childhood game called Connect the Dots. It is a form of puzzle containing a sequence of numbered dots. When a line is drawn the outline of an image is revealed.
       </p>
+            <div class="full-width-box">
       <img src = "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2Fcoloring4all-connect-the-dots-online-5a9ed8e88023b90036ec18e2.jpg?v=1581095294115">
+      </div>
       <p>
-        textToPoints() operates on a similar logic. So what if you want to connect all the vertecies together ? A great p5 feature we could use is something called
+        textToPoints() operates on a similar logic &mdash;
+ it reveals the dots that crawl along the shape of the text. So what if you want to connect all the vertecies together using an outline? A great p5 feature we could use here is something called
         <a href="https://p5js.org/reference/#/p5/beginShape"
           >beginShape() and endShape()</a
-        >. These are magical functions that connect all the vertecies you into a complex shape. Usually it is written this
+        >. These are magical functions that connect vertecies into a complex shape. Usually it is written this
         way:
       </p>
 
@@ -340,7 +343,7 @@
       <h3>textToPoints Morph</h3>
 
       <p>
-        Now that you know how to change the number of vertecies in a letter, we
+        Now that you know how to change the number of vertecies in a letter and using beginShape() and endShape() to connect the dots, we
         are going to try something exciting. What about creating a morphing
         effect that would transform one letter into another letter? <br />
         <br />
