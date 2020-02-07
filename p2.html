@@ -304,12 +304,14 @@
       <h3>Connecting the Vertecies using beginShape() and endShape()</h3>
 
       <p>
-        What if you want to draw the outline of the font by connecting all the
-        vertecies together? A great function we could use is something called
+         You might remember this childhood game called Connect the Dots. It is a form of puzzle containing a sequence of numbered dots. When a line is drawn connecting the dots the outline of an object is revealed.
+      </p>
+      <img src = "https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2Fcoloring4all-connect-the-dots-online-5a9ed8e88023b90036ec18e2.jpg?v=1581095294115">
+      <p>
+        textToPoints() operates on a similar logic. So what if you want to connect all the vertecies together ? A great p5 feature we could use is something called
         <a href="https://p5js.org/reference/#/p5/beginShape"
           >beginShape() and endShape()</a
-        >. These are the magical functions that connects all the vertecies you
-        provide to the function into a complex shape. Usually it is written this
+        >. These are magical functions that connect all the vertecies you into a complex shape. Usually it is written this
         way:
       </p>
 
@@ -330,7 +332,7 @@
 
       <p>
         As you can see, beginShape() and endShape() treats both "h" and "i" as
-        one shape and attempted to connect both together. If you'd like the two
+        one shape and attempts to connect both together. If you'd like the two
         to be separated, you have to create two individual textToPoints arrays
         to separate the "h" and the "i".
       </p>
