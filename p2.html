@@ -369,35 +369,56 @@
         try something exciting. What about creating a morphing effect that would
         transform one letter into another letter? <br />
         <br />
-        
-              <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
+      </p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
       <p>&#8627; click to begin morphing; click to pause transformation</p>
-
+      <p>
         There are couple steps we need to take here. First, load and display
         your OTF font. Then create two empty array global varialbes at the top
         to hold our textToPoinst() objects. This way we can access the objects
         outside of <i>setup()</i> later. <br />
         <br />
-        Next, we have to make sure that the number of
-        vertecies in the first letter matches the number of vertecies in the
-        second letter, so that each vertex has an ending position to move
-        towards. We will achieve this by tweaking the sampleFactor values of the
-        letter one and letter two until they match. Note that whenever you
-        change the font size or the string, the number of vertecies on your text
-        will change.
+        Next, we have to make sure that the number of vertecies in the first
+        letter matches the number of vertecies in the second letter, so that
+        each vertex has an ending position to move towards. We will achieve this
+        by tweaking the sampleFactor values of the letter one and letter two
+        until they match. Note that whenever you change the font size or the
+        string, the number of vertecies on your text will change.
       </p>
 
       <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
-      
+
       <p>
-        Now, let's use the beginShape() technique we've learned from the previous chapter to connect all the vertecies around the first letter inside draw().
+        Now, let's use the beginShape() technique we've learned from the
+        previous chapter to connect all the vertecies around the first letter
+        inside draw().
       </p>
       <script src="https://gist.github.com/xinemata/558b6fee2ed7bb391f81691aa307819a.js"></script>
-      
+
       <p>
-        The next step is to make all the x and y in the first letter to move towards all the x and y inside the second letter. We can do this through if statements.
+        The next step is to make all the x and y in the first letter to move
+        towards all the x and y inside the second letter. We can do this through
+        if statements.
       </p>
       <script src="https://gist.github.com/xinemata/180aa101b950087ac00bfb94ee16bc40.js"></script>
+
+      <h4>
+        Using loop() and noLoop() to Start / Pause the Sketch
+      </h4>
+
+      <p>
+        We have been taught that draw() runs a loop and executes the code
+        repetitively. However there is a way to pause draw() and start it again
+        by using
+        <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a> and
+        <a href="https://p5js.org/reference/#/p5/loop">loop()</a>. <br/><br/>
+        
+        Try adding this line at the bottom of your setup(). 
+      </p>
+      <script src="https://gist.github.com/xinemata/aac9200a3daf161ee787880646531e67.js"></script>
+      <p>
+        Your sketch should stop after 
+      </p>
       <!-- 
       <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
  -->
