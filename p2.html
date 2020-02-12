@@ -371,16 +371,22 @@
         <br />
       </p>
       <video width="400" height="400" controls>
-  <source src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F52462620_554987191645277_1306728089549977967_n.mp4?v=1581475453046" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-      
-            <video width="400" height="400" controls>
-  <source src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F62062766_380332689248141_4257769537732083712_n.mp4?v=1581475687428" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+        <source
+          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F52462620_554987191645277_1306728089549977967_n.mp4?v=1581475453046"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <video width="400" height="400" controls>
+        <source
+          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F62062766_380332689248141_4257769537732083712_n.mp4?v=1581475687428"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       <p>Code sketches by Laurent Malys @laurent.malys</p>
-      
+
       <p>
         There are a couple steps we need to take here. First, load and display
         your OTF font. Then create two empty array global varialbes at the top
@@ -410,14 +416,14 @@ Your browser does not support the video tag.
         if statements.
       </p>
       <script src="https://gist.github.com/xinemata/180aa101b950087ac00bfb94ee16bc40.js"></script>
-           <a href="https://editor.p5js.org/xinxin/sketches/1pFEkmpH"
+      <a href="https://editor.p5js.org/xinxin/sketches/1pFEkmpH"
         >Link to Source Code</a
       >
       <h4>
         Using loop() and noLoop() to Start / Pause the Sketch
       </h4>
       <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
-            <p>&#8627; click to begin morphing; click to pause transformation</p>
+      <p>&#8627; click to begin morphing; click to pause transformation</p>
       <p>
         We have been taught that draw() runs a loop and executes the code
         repetitively. However there is a way to pause draw() and start it again
@@ -434,12 +440,18 @@ Your browser does not support the video tag.
         let's incroporate a mousePressed() function so that the sketch would
         start looping when mouse is pressed.
       </p>
-      
+
       <script src="https://gist.github.com/xinemata/e8aa21260efd8a863e6147b341caf3b3.js"></script>
-      
+
       <p>
-        <i>play</i>
+        The <i>play</i> boolean variable is initated as <i>false</i>, and when
+        mouse is pressed, <i>play</i> becomes true. And if statement follows it
+        to make draw() loops if <i>play</i> becomes <i>true</i>. Sweet!
       </p>
+            <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
+        >Link to Source Code</a
+      >
+      
       <!-- 
       <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
  -->
@@ -472,8 +484,8 @@ Your browser does not support the video tag.
 
       <!--       <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script> -->
 
-      <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
-      <p>&#8627; click to "mop" the screen</p>
+<!--       <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
+      <p>&#8627; click to "mop" the screen</p> -->
 
       <!--       <h3>Text Along the Curve</h3>
       
