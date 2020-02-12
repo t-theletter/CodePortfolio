@@ -375,25 +375,27 @@
         an OTF font in a new sketch. Create a class below
         <i>draw()</i>:
       </p>
-            <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
-      
+      <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
+      <p>
+        Notice that I've created two parameters <i>x</i> and <i>y</i> inside the
+        constructor argument. Once we create an array of objects in the next
+        step, we will take the x and y values from the textToPoints() array and
+        pass them into constructor(). I've also created a show() method inside
+        the class. We will be using these rectangles to draw the outline of the
+        first alphabet.
+      </p>
+
+      <p>
+        The next step is to create a global variable that is an empty array, to
+        hold the objects for <i>class Alphabet1</i>:
+      </p>
       <script src="https://gist.github.com/xinemata/60cc1bbc6b9c3b15b4ab4f1f923351a4.js"></script>
+
+      <p>
+        And create an array of objects inside setup(). This is where we pass the
+        x and y values from textToPoints() into the constructor argument.
+      </p>
       <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script>
-
-      <p>
-        Notice that I've passed two parameters x and y into each of the
-        constructors inside the classes. When we create the arrays of objects in
-        the next step, we will pass the x and y values from the textToPoints()
-        arrays onto the objects for <i>Letter1</i> and <i>Letter2</i>.
-      </p>
-
-      <p>
-        The next step is to add two empty array global variables:
-      </p>
-
-      <p>
-        And create two arrays of objects inside setup().
-      </p>
 
       <h3>Text Along the Curve</h3>
       <h4>Boxes Along the Curve</h4>
