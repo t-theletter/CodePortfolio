@@ -363,7 +363,7 @@
         There are a couple benefits to combining textToPoints() with classes and
         objects. First of all, it could help with code organization. Secondly,
         you could add additional "behaviors" inside the classes which would be
-        inherited by the objects. If you need a refresher on how classes and
+        inherited by the objects, and each object can operate individually. If you need a refresher on how classes and
         objects work, check out this
         <a href="p5cheat.html">cheat sheet</a> or this
         <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">video tutorial</a
@@ -392,10 +392,16 @@
       <script src="https://gist.github.com/xinemata/60cc1bbc6b9c3b15b4ab4f1f923351a4.js"></script>
 
       <p>
-        And create an array of objects inside setup(). This is where we pass the
+        And create an array of objects inside setup() after textToPoints() is declared. This is where we pass the
         x and y values from textToPoints() into the constructor argument.
       </p>
       <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script>
+      
+      <p>
+        The next step is to show the text outline on screen. Let's create another for Loop inside draw(), and place <i>_alphabet1[i].show()</i> inside the loop:
+      </p>
+      
+      <script src="https://gist.github.com/xinemata/be41dbc4f0c64f9ee0d4b1acf0aaf4d9.js"></script>
 
       <h3>Text Along the Curve</h3>
       <h4>Boxes Along the Curve</h4>
