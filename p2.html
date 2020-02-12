@@ -411,14 +411,19 @@
         repetitively. However there is a way to pause draw() and start it again
         by using
         <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a> and
-        <a href="https://p5js.org/reference/#/p5/loop">loop()</a>. <br/><br/>
-        
-        Try adding this line at the bottom of your setup(). 
+        <a href="https://p5js.org/reference/#/p5/loop">loop()</a>. <br /><br />
+
+        Try adding this line at the bottom of your setup():
       </p>
       <script src="https://gist.github.com/xinemata/aac9200a3daf161ee787880646531e67.js"></script>
       <p>
-        Your sketch should stop after 
+        Your sketch should draw the first letter but stop after that. This means
+        the code inside draw() has been executed once but won't be looping. Now
+        let's incroporate a mousePressed() function so that the sketch would
+        start looping when mouse is pressed.
       </p>
+      
+      <script src="https://gist.github.com/xinemata/e8aa21260efd8a863e6147b341caf3b3.js"></script>
       <!-- 
       <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
  -->
