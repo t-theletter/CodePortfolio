@@ -352,27 +352,69 @@
         to separate the "h" and the "i".
       </p>
 
-      <h3>textToPoints() Morph</h3>
-
-      <p>
-        Now that you know how to change the number of vertecies in a letter and
-        using beginShape() and endShape() to connect the dots, we are going to
-        try something exciting. What about creating a morphing effect that would
-        transform one letter into another letter? <br />
-        <br />
-
-        There are couple steps we need to take here. First we have to make sure
-        that the number of vertecies in the first letter matches the number of
-        vertecies in the second letter, so that each vertex has an ending
-        position to move towards. We will achieve this by tweaking the
-        sampleFactor values of the letter one and letter two until they match.
-      </p>
-
-      <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
-      <p>&#8627; click to begin morphing; click to pause transformation</p>
+      <h4>
+        Morphing Using Classes and Objects
+      </h4>
 
       <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
       <p>&#8627; click to "mop" the screen</p>
+
+      <p>
+        There are a couple benefits to combining textToPoints() with classes and
+        objects. First of all, it could help with code organization. Secondly,
+        you could add additional "behaviors" inside the classes which would be
+        inherited by the objects. If you need a refresher on how classes and
+        objects work, check out this
+        <a href="p5cheat.html">cheat sheet</a> or this
+        <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">video tutorial</a
+        >.
+      </p>
+
+      <p>
+        Now let's re-create the "MOP" sketch above. After loading and displaying
+        an OTF font in a new sketch. Create a class below
+        <i>draw()</i>:
+      </p>
+            <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
+      
+      <script src="https://gist.github.com/xinemata/60cc1bbc6b9c3b15b4ab4f1f923351a4.js"></script>
+      <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script>
+
+      <p>
+        Notice that I've passed two parameters x and y into each of the
+        constructors inside the classes. When we create the arrays of objects in
+        the next step, we will pass the x and y values from the textToPoints()
+        arrays onto the objects for <i>Letter1</i> and <i>Letter2</i>.
+      </p>
+
+      <p>
+        The next step is to add two empty array global variables:
+      </p>
+
+      <p>
+        And create two arrays of objects inside setup().
+      </p>
+
+      <h3>Text Along the Curve</h3>
+      <h4>Boxes Along the Curve</h4>
+      <p>
+        To keep things simple, let's create a white-boxed version of text along
+        the curve using rect() first.
+      </p>
+      <iframe src="https://editor.p5js.org/xinemata/embed/lyXf9SNF"></iframe>
+      <h4>Use JavaScript charAt() to Treat a String as an Array of Chars</h4>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/6a6b79c7242adb24853211f6f569ee9d.js"></script>
+      </div>
+      <iframe src="https://editor.p5js.org/xinemata/embed/nqTeL89x"></iframe>
+      <h4>Combine Everything!</h4>
+      <iframe src="https://editor.p5js.org/xinemata/embed/n2LosuYn"></iframe>
+
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/118ab653c6a59dbe437bb869ca5d1f11.js"></script>
+      </div>
+      <h3>Next Week</h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/8HR7jS5Y"></iframe>
 
       <h3>Text Along the Curve</h3>
 
@@ -411,7 +453,8 @@
         position is described by its x and y values on the plane. Contrary to
         the Cartesian coordinate system, the polar coordinate system describes
         the position using (1) distance from the center and (2) degrees of
-        angle. The syntax for the polar coordinate system is (distance from the center, degrees of angle). 
+        angle. The syntax for the polar coordinate system is (distance from the
+        center, degrees of angle).
       </p>
     </div>
   </body>
