@@ -140,7 +140,14 @@
 
       <h3>textToPoints() Basics</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wbDF6xcgvV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/wbDF6xcgvV8"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
       <p>
         <a href="https://p5js.org/reference/#/p5.Font/textToPoints"
           >textToPoints()</a
@@ -171,7 +178,7 @@
           >
         </li>
       </ul>
-<!--             <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe> -->
+      <!--             <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe> -->
       <h4>
         Loading Font
       </h4>
@@ -368,8 +375,16 @@
         vertecies in the second letter, so that each vertex has an ending
         position to move towards. We will achieve this by tweaking the
         sampleFactor values of the letter one and letter two until they match.
+        Note that whenever you change the font size or the string, the number of
+        vertecies on your text will change.
       </p>
 
+      <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
+
+      <p>
+        We've got the basic textToPoints() set up. Next I would like to show you
+        how to combine textToPoinst() with classes and objects so that our code is cleaner and easier to organize going forward.
+      </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
       <p>&#8627; click to begin morphing; click to pause transformation</p>
 
