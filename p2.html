@@ -462,6 +462,113 @@
       <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
         >Link to Source Code</a
       >
+      
+            <h4>
+        Morphing Using Classes and Objects
+      </h4>
+
+      <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
+      <p>&#8627; click to "mop" the screen</p>
+
+      <p>
+        There are a couple benefits to combining textToPoints() with classes and
+        objects. First of all, it could help with code organization. Secondly,
+        you could add additional "behaviors" inside the classes which would be
+        inherited by the objects, and each object can operate individually. If
+        you need a refresher on how classes and objects work, check out this
+        <a href="p5cheat.html">cheat sheet</a> or this
+        <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">video tutorial</a
+        >.
+      </p>
+
+      <p>
+        Now let's re-create the "MOP" sketch above. After loading and displaying
+        an OTF font in a new sketch. Create a class below
+        <i>draw()</i>:
+      </p>
+      <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
+      <p>
+        Notice that I've created two parameters <i>x</i> and <i>y</i> inside the
+        constructor argument. Once we create an array of objects in the next
+        step, we will take the x and y values from the textToPoints() array and
+        pass them into constructor(). I've also created a show() method inside
+        the class. We will be using these rectangles to draw the outline of the
+        first alphabet.
+      </p>
+
+      <p>
+        The next step is to create a global variable that is an empty array, to
+        hold the objects for <i>class Alphabet1</i>:
+      </p>
+      <script src="https://gist.github.com/xinemata/60cc1bbc6b9c3b15b4ab4f1f923351a4.js"></script>
+
+      <p>
+        And create an array of objects inside setup() after textToPoints() is
+        declared. This is where we pass the x and y values from textToPoints()
+        into the constructor argument.
+      </p>
+      <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script>
+
+      <p>
+        The next step is to show the text outline on screen. Let's create
+        another for Loop inside draw(), and place
+        <i>_alphabet1[i].show()</i> inside the loop:
+      </p>
+
+      <script src="https://gist.github.com/xinemata/be41dbc4f0c64f9ee0d4b1acf0aaf4d9.js"></script>
+      <p>
+        You should see your first alphabet displayed on the screen. We've
+        successfully "borrowed" the array of x and y from textToPoints() and
+        plugged them into class and objects. Here is
+        <a href="https://editor.p5js.org/xinxin/sketches/zm_-6pJJ"
+          >a link to all the code I've written so far</a
+        >.
+      </p>
+
+      <p>
+        There are three alphabets in this example &mdash; "M", "O", "P". We have
+        finished the setup for M. The next challenge is for you to repeat the
+        steps to set up O and P. Don't forget to adjust the
+        <i>sampleFactor</i> for each of the letter so that the numbers of
+        vertecies match.
+      </p>
+
+      <p>
+        ... ... ...
+      </p>
+
+      <p>
+        Once you're done with that, let's begin to code our M &mdash; O
+        transformation. This works the same way as the previous morphing
+        tutorial, except for the sake of organization, I'm going to place this
+        block of code a function called <i>morph1</i>.
+      </p>
+      <script src="https://gist.github.com/xinemata/49fa9bf06e2b129ce935d2cbaceef867.js"></script>
+
+      <p>
+        Load <i>morph1()</i> inside draw() and you should see M morphing into O.
+        Your next challenge is to repeat the steps and create the O &mdash; P
+        transformation inside <i>morph2()</i>.
+      </p>
+      <p>
+        ... ... ...
+      </p>
+      <p>
+        Next, let's use the switch statement we've learned from Project #1 as a
+        means to advance the letter morphing on mousePressed():
+      </p>
+
+      <script src="https://gist.github.com/xinemata/e63800e83015b4a177cf844530ade2d5.js"></script>
+
+      <p>
+        Now you should be able to morph from M &mdash; O &mdash; P. But for an
+        interactive project to be effective and not look broken, you should find
+        a way for P to loop back to M instead of stopping. Can you figure out
+        how to make the sketch loop? (hint: there are more than one answers)
+      </p>
+           <a href="https://editor.p5js.org/xinxin/sketches/pqrsbqcl"
+        >Link to Source Code</a
+      >
     </div>
   </body>
 </html>
