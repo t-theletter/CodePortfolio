@@ -383,7 +383,21 @@
 
       <p>
         We've got the basic textToPoints() set up. Next I would like to show you
-        how to combine textToPoinst() with classes and objects so that our code is cleaner and easier to organize going forward.
+        how to combine textToPoinst() with classes and objects so that our code
+        is cleaner and easier to organize going forward. If you need a refresher
+        on how classes and objects work, check out this
+        <a href="p5cheat.html">cheat sheet</a> or this
+        <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">video tutorial</a
+        >. Now let's create two classes under <i>function draw()</i>:
+      </p>
+
+      <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
+
+      <p>
+        Notice that I've passed two parameters x and y into each of the
+        constructors inside the classes. When we create the arrays of objects in
+        the next step, we will pass the x and y values from the textToPoints()
+        arrays onto the objects for <i>Letter1</i> and <i>Letter2</i>.
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
       <p>&#8627; click to begin morphing; click to pause transformation</p>
