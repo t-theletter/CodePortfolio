@@ -370,18 +370,25 @@
         transform one letter into another letter? <br />
         <br />
 
-        There are couple steps we need to take here. First we have to make sure
-        that the number of vertecies in the first letter matches the number of
-        vertecies in the second letter, so that each vertex has an ending
-        position to move towards. We will achieve this by tweaking the
-        sampleFactor values of the letter one and letter two until they match.
-        Note that whenever you change the font size or the string, the number of
-        vertecies on your text will change.
+        There are couple steps we need to take here. First, load and display
+        your OTF font. Then create two empty array global varialbes at the top
+        to hold our textToPoinst() objects. This way we can access the objects
+        outside of <i>setup()</i>. Next, we have to make sure that the number of
+        vertecies in the first letter matches the number of vertecies in the
+        second letter, so that each vertex has an ending position to move
+        towards. We will achieve this by tweaking the sampleFactor values of the
+        letter one and letter two until they match. Note that whenever you
+        change the font size or the string, the number of vertecies on your text
+        will change.
       </p>
 
-      <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
+      <p></p>
 
-      <p>
+      <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
+      <!-- 
+      <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
+ -->
+      <!--             <p>
         We've got the basic textToPoints() set up. Next I would like to show you
         how to combine textToPoinst() with classes and objects so that our code
         is cleaner and easier to organize going forward. If you need a refresher
@@ -389,11 +396,9 @@
         <a href="p5cheat.html">cheat sheet</a> or this
         <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">video tutorial</a
         >. Now let's create two classes under <i>function draw()</i>:
-      </p>
+      </p> -->
 
-      <script src="https://gist.github.com/xinemata/f39b6ac87a2bfe52b64802771ce3873c.js"></script>
-
-      <p>
+      <!--       <p>
         Notice that I've passed two parameters x and y into each of the
         constructors inside the classes. When we create the arrays of objects in
         the next step, we will pass the x and y values from the textToPoints()
@@ -408,10 +413,10 @@
       
       <p>
         And create two arrays of objects inside setup(). 
-      </p>
-      
-      <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script>
-      
+      </p> -->
+
+      <!--       <script src="https://gist.github.com/xinemata/f3a48ab76f146cd7a004e9369b537773.js"></script> -->
+
       <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
       <p>&#8627; click to begin morphing; click to pause transformation</p>
 
