@@ -597,24 +597,27 @@
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
           >JavaScript splice()</a
         >
-        makes it very easy to remove, add and swap objects inside an array. The syntax for splice() is:
+        makes it very easy to remove, add and swap objects inside an array. The
+        syntax for splice() is:
       </p>
-      
+
       <script src="https://gist.github.com/xinemata/eb2347b3570d9a86c88fc6cc781fb7f9.js"></script>
- <p>
-        There are three parameters inside splice(). Let's
-        break it down one by one:
+      <p>
+        There are three parameters inside splice(). Let's break it down one by
+        one:
       </p>
 
       <ul>
-        <li>(1) start: the index at which to start changing the array</li>
-        <li>(2) deleteCount: the number of items to remove from the array. Put 0 here if you don't want to remove an item.<b>OPTIONAL.</b></li>
-        <li>(3) item: The elements to add to the array, beginning from start. If you do not specify any elements, splice() will only remove elements from the array. <b>OPTIONAL.</b></li>
+        <li>(1) start: the index at which to start changing the array.</li>
         <li>
-          (5) sampleFactor: the fifth parameter is the most important one to
-          understand here. It defines how many points to draw along the text.
-          The defacult value is 0.1, the higher number you enter here results in
-          higher resolution, and lower number results in lower resolution
+          (2) deleteCount: the number of items to remove from the array. Put 0
+          here if you don't want to remove an item.
+          <b>This parameter is optional.</b>
+        </li>
+        <li>
+          (3) item1, item2 ...: The elements to add to the array, beginning from start. If
+          you do not specify any elements, splice() will only remove elements
+          from the array. <b>This parameter is optional.</b>
         </li>
       </ul>
       <h4>
