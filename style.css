@@ -21,6 +21,21 @@ h2{
   padding:0; */
 }
 
+button {
+    font-family: "Inconsolata", monospace;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  width:100%;
+/*   text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
+}
+
 p {
   font-size: 12pt;
   line-height: 18pt;
@@ -177,6 +192,5 @@ body .gist .gist-meta {
 
 #toggle {
   display:none;
-  
-  
 }
+
