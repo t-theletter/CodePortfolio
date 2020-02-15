@@ -283,7 +283,7 @@
         />
       </div>
       <p>
-        Turns out that our <i>hiArray</i> variable has taken all the vertecies
+        Turns out that our <i>hiArray</i> variable has taken all the verticies
         from the text and turned it into an array of objects. Each of these
         objects inside the array contains a variable x, a variable y, and a
         variable alpha. Being able to access these variables mean that we can
@@ -313,15 +313,15 @@
         <a href="https://editor.p5js.org/xinxin/sketches/S_pEGueX">here</a>!
       </p>
 
-      <h3>Changing Number of Vertecies</h3>
+      <h3>Changing Number of Verticies</h3>
 
       <p>
         Once you've gotten comfortable with the ideas above, let's try changing
-        the number of vertecies in your text. This can be achieved simply by
+        the number of verticies in your text. This can be achieved simply by
         changing the sampleFactor parameter inside textToPoints():
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/4jQwsJvN"></iframe>
-      <p>&#8627; use UP / DOWN keys to adjust the number of vertecies.</p>
+      <p>&#8627; use UP / DOWN keys to adjust the number of verticies.</p>
 
       <script src="https://gist.github.com/xinemata/cb4c7a6e979a9c76f3b88fe7afc31602.js"></script>
       <a href="https://editor.p5js.org/xinxin/sketches/4jQwsJvN"
@@ -334,7 +334,7 @@
         within a decimal range.
       </p>
 
-      <h3>Connecting the Vertecies using beginShape() and endShape()</h3>
+      <h3>Connecting the Verticies using beginShape() and endShape()</h3>
 
       <p>
         You might remember this childhood game called Connect the Dots. It is a
@@ -349,11 +349,11 @@
       <p>
         textToPoints() operates on a similar logic &mdash; it reveals the dots
         that crawl along the shape of the text. So what if you want to connect
-        all the vertecies together using an outline? A great p5 feature we could
+        all the verticies together using an outline? A great p5 feature we could
         use here is something called
         <a href="https://p5js.org/reference/#/p5/beginShape"
           >beginShape() and endShape()</a
-        >. These are magical functions that connect vertecies into a complex
+        >. These are magical functions that connect verticies into a complex
         shape. Usually it is written this way:
       </p>
 
@@ -382,7 +382,7 @@
       <h2>textToPoints() Morph</h2>
 
       <p>
-        Now that you know how to change the number of vertecies in a letter and
+        Now that you know how to change the number of verticies in a letter and
         using beginShape() and endShape() to connect the dots, we are going to
         try something exciting. What about creating a morphing effect that would
         transform one letter into another letter? <br />
@@ -411,19 +411,19 @@
         to hold our textToPoinst() objects. This way we can access the objects
         outside of <i>setup()</i> later. <br />
         <br />
-        Next, we have to make sure that the number of vertecies in the first
-        letter matches the number of vertecies in the second letter, so that
+        Next, we have to make sure that the number of verticies in the first
+        letter matches the number of verticies in the second letter, so that
         each vertex has an ending position to move towards. We will achieve this
         by tweaking the sampleFactor values of the letter one and letter two
         until they match. Note that whenever you change the font size or the
-        string, the number of vertecies on your text will change.
+        string, the number of verticies on your text will change.
       </p>
 
       <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
 
       <p>
         Now, let's use the beginShape() technique we've learned from the
-        previous chapter to connect all the vertecies around the first letter
+        previous chapter to connect all the verticies around the first letter
         inside draw().
       </p>
       <script src="https://gist.github.com/xinemata/558b6fee2ed7bb391f81691aa307819a.js"></script>
@@ -537,7 +537,7 @@
         finished the setup for M. The next challenge is for you to repeat the
         steps to set up O and P. Don't forget to adjust the
         <i>sampleFactor</i> for each of the letter so that the numbers of
-        vertecies match.
+        verticies match.
       </p>
 
       <p>
