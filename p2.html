@@ -11,6 +11,16 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    
+          <script>
+      $("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
+});
+      </script>
   </head>
 
   <body>
@@ -154,9 +164,10 @@
 
       <h1>Study Guide</h1>
 
-      <button onclick="myFunction()">textToPoints() Basics</button>
-
-      <div id = "toggle1">
+   <div class="first"><button type="button">Click Me!</button></div>
+      
+      
+      
       <h2>textToPoints() Basics</h2>
 
       <iframe
@@ -382,7 +393,6 @@
         to be separated, you have to create two individual textToPoints arrays
         to separate the "h" and the "i".
       </p>
-             </div>
 
 <div id = "morph">
       <h2>textToPoints() Morph</h2>
@@ -723,6 +733,9 @@
       <a href="https://editor.p5js.org/xinxin/sketches/SG1n1WGq"
         >Link to Source Code</a
       >
+      
+          <div class="second">Hi</div>
+      
     </div>
   </body>
 </html>
