@@ -144,7 +144,8 @@
         by Peter Cho
         <br />
         (8) <a href="https://paperdove.com/">Interactive posters</a> by Dae In
-        Chung <br / > (9)
+        Chung <br /> 
+        (9)
         <a href="https://www.moonjang.com/here-now-and-waiting"
           >Here, Now, and Waiting</a
         >
@@ -152,6 +153,15 @@
       </p>
 
       <h1>Study Guide</h1>
+
+      <button onclick="myFunction()">textToPoints() Morph</button>
+
+      <script>
+        function myFunction() {
+          var elmnt = document.getElementById("morph");
+          elmnt.scrollIntoView();
+        }
+      </script>
 
       <h2>textToPoints() Basics</h2>
 
@@ -167,8 +177,8 @@
         <a href="https://p5js.org/reference/#/p5.Font/textToPoints"
           >textToPoints()</a
         >
-        is a method in p5 that converts text into points on the screen. It’s
-        an exciting feature that will allow us to manipulate type in new and
+        is a method in p5 that converts text into points on the screen. It’s an
+        exciting feature that will allow us to manipulate type in new and
         surprising ways. In order for textToPoints() to work, you have to use a
         specific font format called OpenType font (OTF) in your sketches. Here
         are a couple direct links for you to download OTF fonts:
@@ -379,9 +389,17 @@
         to separate the "h" and the "i".
       </p>
 
+<div id = "morph">
       <h2>textToPoints() Morph</h2>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/G6o_BZqSkSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/G6o_BZqSkSw"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
       <p>
         Now that you know how to change the number of verticies in a letter and
         using beginShape() and endShape() to connect the dots, we are going to
@@ -470,7 +488,8 @@
       <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
         >Link to Source Code</a
       >
-
+</div>
+      
       <h2>
         textToPoints() + Classes and Objects
       </h2>
