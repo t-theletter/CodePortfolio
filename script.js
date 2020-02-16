@@ -1,5 +1,5 @@
 function myFunction() {
-  var x = document.getElementById("toggle", "toggle1");
+  var x = document.getElementById("toggle");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

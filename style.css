@@ -189,8 +189,7 @@ body .gist .gist-meta {
   text-decoration: none;
 }
 
-#toggle,
-#toggle1 {
+#toggle {
   display: none;
 }
 
