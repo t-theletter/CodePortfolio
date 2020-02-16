@@ -9,18 +9,9 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- import the webpage's javascript file -->
+    <!-- import the webpage's javascript + jQuery file -->
     <script src="/script.js" defer></script>
-    
     <script src="jquery-3.4.1.min.js"></script>
-    
-          <script>
-      $("button").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".second").offset().top},
-        'slow');
-});
-      </script>
   </head>
 
   <body>
@@ -154,7 +145,7 @@
         by Peter Cho
         <br />
         (8) <a href="https://paperdove.com/">Interactive posters</a> by Dae In
-        Chung <br /> 
+        Chung <br />
         (9)
         <a href="https://www.moonjang.com/here-now-and-waiting"
           >Here, Now, and Waiting</a
@@ -164,11 +155,13 @@
 
       <h1>Study Guide</h1>
 
-   <div class="first"><button type="button">Click Me!</button></div>
+      <a href="#basic">textToPoints() Basics</a>
+      <a href="#morph">textToPoints() Morph</a>
+      <a href="#class">textToPoints() + Classes and Objects</a>
+      <a href="#splice">Removing / Adding / Swapping Objects Using JavaScript splice()</a>
       
       
-      
-      <h2>textToPoints() Basics</h2>
+      <div id="basic"><h2>textToPoints() Basics</h2></div>
 
       <iframe
         width="560"
@@ -394,110 +387,108 @@
         to separate the "h" and the "i".
       </p>
 
-<div id = "morph">
-      <h2>textToPoints() Morph</h2>
+      <div id="morph"><h2>textToPoints() Morph</h2></div>
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/G6o_BZqSkSw"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Now that you know how to change the number of verticies in a letter and
-        using beginShape() and endShape() to connect the dots, we are going to
-        try something exciting. What about creating a morphing effect that would
-        transform one letter into another letter? <br />
-        <br />
-      </p>
-      <video width="400" height="400" controls>
-        <source
-          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F52462620_554987191645277_1306728089549977967_n.mp4?v=1581475453046"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/G6o_BZqSkSw"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Now that you know how to change the number of verticies in a letter
+          and using beginShape() and endShape() to connect the dots, we are
+          going to try something exciting. What about creating a morphing effect
+          that would transform one letter into another letter? <br />
+          <br />
+        </p>
+        <video width="400" height="400" controls>
+          <source
+            src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F52462620_554987191645277_1306728089549977967_n.mp4?v=1581475453046"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
 
-      <video width="400" height="400" controls>
-        <source
-          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F62062766_380332689248141_4257769537732083712_n.mp4?v=1581475687428"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <p>Code sketches by Laurent Malys @laurent.malys</p>
+        <video width="400" height="400" controls>
+          <source
+            src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F62062766_380332689248141_4257769537732083712_n.mp4?v=1581475687428"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <p>Code sketches by Laurent Malys @laurent.malys</p>
 
-      <p>
-        There are a couple steps we need to take here. First, load and display
-        your OTF font. Then create two empty array global varialbes at the top
-        to hold our textToPoinst() objects. This way we can access the objects
-        outside of <i>setup()</i> later. <br />
-        <br />
-        Next, we have to make sure that the number of verticies in the first
-        letter matches the number of verticies in the second letter, so that
-        each vertex has an ending position to move towards. We will achieve this
-        by tweaking the sampleFactor values of the letter one and letter two
-        until they match. Note that whenever you change the font size or the
-        string, the number of verticies on your text will change.
-      </p>
+        <p>
+          There are a couple steps we need to take here. First, load and display
+          your OTF font. Then create two empty array global varialbes at the top
+          to hold our textToPoinst() objects. This way we can access the objects
+          outside of <i>setup()</i> later. <br />
+          <br />
+          Next, we have to make sure that the number of verticies in the first
+          letter matches the number of verticies in the second letter, so that
+          each vertex has an ending position to move towards. We will achieve
+          this by tweaking the sampleFactor values of the letter one and letter
+          two until they match. Note that whenever you change the font size or
+          the string, the number of verticies on your text will change.
+        </p>
 
-      <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
+        <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
 
-      <p>
-        Now, let's use the beginShape() technique we've learned from the
-        previous chapter to connect all the verticies around the first letter
-        inside draw().
-      </p>
-      <script src="https://gist.github.com/xinemata/558b6fee2ed7bb391f81691aa307819a.js"></script>
+        <p>
+          Now, let's use the beginShape() technique we've learned from the
+          previous chapter to connect all the verticies around the first letter
+          inside draw().
+        </p>
+        <script src="https://gist.github.com/xinemata/558b6fee2ed7bb391f81691aa307819a.js"></script>
 
-      <p>
-        The next step is to make all the x and y in the first letter to move
-        towards all the x and y inside the second letter. We can do this through
-        if statements.
-      </p>
-      <script src="https://gist.github.com/xinemata/180aa101b950087ac00bfb94ee16bc40.js"></script>
-      <a href="https://editor.p5js.org/xinxin/sketches/1pFEkmpH"
-        >Link to Source Code</a
-      >
-      <h3>
-        Using loop() and noLoop() to Start / Pause the Sketch
-      </h3>
-      <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
-      <p>&#8627; click to begin morphing; click to pause transformation</p>
-      <p>
-        We have been taught that draw() runs a loop and executes the code
-        repetitively. However there is a way to pause draw() and start it again
-        by using
-        <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a> and
-        <a href="https://p5js.org/reference/#/p5/loop">loop()</a>. <br /><br />
+        <p>
+          The next step is to make all the x and y in the first letter to move
+          towards all the x and y inside the second letter. We can do this
+          through if statements.
+        </p>
+        <script src="https://gist.github.com/xinemata/180aa101b950087ac00bfb94ee16bc40.js"></script>
+        <a href="https://editor.p5js.org/xinxin/sketches/1pFEkmpH"
+          >Link to Source Code</a
+        >
+        <h3>
+          Using loop() and noLoop() to Start / Pause the Sketch
+        </h3>
+        <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
+        <p>&#8627; click to begin morphing; click to pause transformation</p>
+        <p>
+          We have been taught that draw() runs a loop and executes the code
+          repetitively. However there is a way to pause draw() and start it
+          again by using
+          <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a> and
+          <a href="https://p5js.org/reference/#/p5/loop">loop()</a>.
+          <br /><br />
 
-        Try adding this line at the bottom of your setup():
-      </p>
-      <script src="https://gist.github.com/xinemata/aac9200a3daf161ee787880646531e67.js"></script>
-      <p>
-        Your sketch should draw the first letter but stop after that. This means
-        the code inside draw() has been executed once but won't be looping. Now
-        let's incroporate a mousePressed() function so that the sketch would
-        start looping when mouse is pressed.
-      </p>
+          Try adding this line at the bottom of your setup():
+        </p>
+        <script src="https://gist.github.com/xinemata/aac9200a3daf161ee787880646531e67.js"></script>
+        <p>
+          Your sketch should draw the first letter but stop after that. This
+          means the code inside draw() has been executed once but won't be
+          looping. Now let's incroporate a mousePressed() function so that the
+          sketch would start looping when mouse is pressed.
+        </p>
 
-      <script src="https://gist.github.com/xinemata/e8aa21260efd8a863e6147b341caf3b3.js"></script>
+        <script src="https://gist.github.com/xinemata/e8aa21260efd8a863e6147b341caf3b3.js"></script>
 
-      <p>
-        The <i>play</i> boolean variable is initated as <i>false</i>, and when
-        mouse is pressed, <i>play</i> becomes true. And if statement follows it
-        to make draw() loops if <i>play</i> becomes <i>true</i>. Sweet!
-      </p>
-      <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
-        >Link to Source Code</a
-      >
-</div>
-      
-      <h2>
-        textToPoints() + Classes and Objects
-      </h2>
+        <p>
+          The <i>play</i> boolean variable is initated as <i>false</i>, and when
+          mouse is pressed, <i>play</i> becomes true. And if statement follows
+          it to make draw() loops if <i>play</i> becomes <i>true</i>. Sweet!
+        </p>
+        <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
+          >Link to Source Code</a
+        >
+      </div>
+
+     <div id="class"> <h2>textToPoints() + Classes and Objects</h2></div>
 
       <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
       <p>&#8627; click to "mop" the screen</p>
@@ -613,7 +604,7 @@
       <a href="https://editor.p5js.org/xinxin/sketches/m3g1yYZW"
         >Link to Source Code</a
       >
-      <h2>Removing / Adding / Swapping Objects Using JavaScript splice()</h2>
+    <div id="splice"><h2>Removing / Adding / Swapping Objects Using JavaScript splice()</h2></div>
 
       <p>
         <a
@@ -733,9 +724,6 @@
       <a href="https://editor.p5js.org/xinxin/sketches/SG1n1WGq"
         >Link to Source Code</a
       >
-      
-          <div class="second">Hi</div>
-      
     </div>
   </body>
 </html>
