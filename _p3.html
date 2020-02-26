@@ -275,17 +275,24 @@
         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/set"
             >set(row, column, value)</a
-          >: replaces the 
+          >: overwrites the cell value in the table object 
         </li>
         <li class="bullet">
-          <a href="https://p5js.org/reference/#/p5.Table/getColumnCount"
-            >getColumnCount()</a
-          >
-          or
-          <a href="https://p5js.org/reference/#/p5.Table/getRowCount"
-            >getRowCount()</a
-          >: returns the total number of columns or rows in a Table. It's used
-          in a similar way as array.length
+          <a href="https://p5js.org/reference/#/p5.Table/get"
+            >get(row, column)</a
+          >: retrieves the cell value from the table object
+        </li>
+        
+                <li class="bullet">
+          <a href="https://p5js.org/reference/#/p5.Table/addRow"
+            >addRow(id)</a
+          > or <a href="https://p5js.org/reference/#/p5.Table/addColumn">addColumn(id)</a>: adds a row or a column to the table object
+        </li>
+        
+                <li class="bullet">
+          <a href="https://p5js.org/reference/#/p5.Table/removeRow"
+            >removeRow(id)</a
+          > or <a href="https://p5js.org/reference/#/p5.Table/removeColumn">addColumn(id)</a>: removes a row or a column from the table object
         </li>
       </ul>
 
