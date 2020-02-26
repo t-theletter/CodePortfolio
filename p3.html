@@ -186,7 +186,7 @@
         modular design, so that different combinations of the words would still
         make out logical sentences. Once you're done with that, download the
         spreadsheet as a CSV file, and upload it to your p5 sketch folder. When
-        you click on the CSV file inside the p5 editor, you shoudl see something
+        you click on the CSV file inside the p5 editor, you should see something
         like this:
       </p>
       <div class="full-width-box">
@@ -194,6 +194,21 @@
           src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-02-26%20at%201.25.08%20AM.png?v=1582698317988"
         />
       </div>
+
+      <p>
+        If you look carefully, you might figure out that every new line creates
+        a new row, and every comma creates a new column. You can edit your CSV
+        file inside the editor if you decide that something needs to change.
+      </p>
+
+      <p>
+        Great! Now let's load the table into the sketch! Inside the p5.Table object, there are a couple things
+        you should know about in order to properly load and display the data:
+      </p>
+      <ul>
+        <li class="bullet">getString(row, column): retrieves a String value from the Table's specified row and column.</li>
+        
+      </ul>
       <iframe src="https://editor.p5js.org/xinxin/embed/hb73hbbK"></iframe>
       <p>&#8627; click to randomize sentence</p>
 
