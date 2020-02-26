@@ -80,8 +80,9 @@
         <a href="https://creative-coding.decontextualize.com/csv-files/"
           >CSV Files (tutorial)</a
         >, Allison Parrish
-        <br/>
-        (2)        <a href="https://rednoise.org/rita/tutorial/index.php"
+        <br />
+        (2)
+        <a href="https://rednoise.org/rita/tutorial/index.php"
           >Rita.js tutorials</a
         >
       </p>
@@ -131,14 +132,16 @@
         of generation.
         <br />
         (4) <a href="https://rednoise.org/rita/gallery.php">RiTa.js Gallery</a>
-          <br />
+        <br />
         (5)
-        
-        <a href="https://rednoise.org/sketches/Shanshui/">Shanshui</a>, Chen Qianxun
 
+        <a href="https://rednoise.org/sketches/Shanshui/">Shanshui</a>, Chen
+        Qianxun
       </p>
 
-      <!--       <h1>Study Guide</h1>
+      <h1>Study Guide</h1>
+
+      <!--  
       <h2>
         Table of Content
       </h2>
@@ -152,26 +155,25 @@
         >
       </p>
 
-      <div id="basic"><h2>loadTable() Basics</h2></div>
+-->
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/wbDF6xcgvV8"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div id="basic"><h2>Loading / Writing to CSV Files</h2></div>
+
+      <h3>
+        loadTable()
+      </h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/hb73hbbK"></iframe>
+      <p>&#8627; click to randomize sentence</p>
+
       <p>
-        <a href="https://p5js.org/reference/#/p5.Font/textToPoints"
-          >textToPoints()</a
-        >
-        is a method in p5 that converts text into points on the screen. It’s an
-        exciting feature that will allow us to manipulate type in new and
-        surprising ways. In order for textToPoints() to work, you have to use a
-        specific font format called OpenType font (OTF) in your sketches. Here
-        are a couple direct links for you to download OTF fonts:
+        <a href="https://p5js.org/reference/#/p5/loadTable">loadTable()</a>
+        is a p5 function that reads the contents of a CSV file and creates a p5.Table object with
+        its values. If a file is specified, it must be located in the sketch's
+        "data" folder. The filename parameter can also be a URL to a file found
+        online.
       </p>
+
+      <!--             
       <ul>
         <li class="bullet">
           <a
