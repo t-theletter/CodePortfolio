@@ -263,7 +263,7 @@
       </p>
 
       <h3>
-        Adding Items to the Table Object
+        Manipulating the Table Object
       </h3>
 
       <p>
@@ -275,27 +275,45 @@
         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/set"
             >set(row, column, value)</a
-          >: overwrites the cell value in the table object 
+          >: overwrites the cell value in the table object
         </li>
         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/get"
             >get(row, column)</a
           >: retrieves the cell value from the table object
         </li>
-        
-                <li class="bullet">
-          <a href="https://p5js.org/reference/#/p5.Table/addRow"
-            >addRow(id)</a
-          > or <a href="https://p5js.org/reference/#/p5.Table/addColumn">addColumn(id)</a>: adds a row or a column to the table object
+
+        <li class="bullet">
+          <a href="https://p5js.org/reference/#/p5.Table/addRow">addRow(id)</a>
+          or
+          <a href="https://p5js.org/reference/#/p5.Table/addColumn"
+            >addColumn(id)</a
+          >: adds a row or a column to the table object
         </li>
-        
-                <li class="bullet">
+
+        <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/removeRow"
             >removeRow(id)</a
-          > or <a href="https://p5js.org/reference/#/p5.Table/removeColumn">addColumn(id)</a>: removes a row or a column from the table object
+          >
+          or
+          <a href="https://p5js.org/reference/#/p5.Table/removeColumn"
+            >addColumn(id)</a
+          >: removes a row or a column from the table object
         </li>
       </ul>
-
+      
+      <p>
+        As a proof of concept, let's add the lines below to the end of setup() inside the previous code example:
+      </p>
+      
+      <script src="https://gist.github.com/xinemata/ffe3e8bd8d75785e21a245380834581b.js"></script>
+            <a href="https://editor.p5js.org/xinxin/sketches/SBGCIRZo"
+        >Link to Source Code</a
+      >
+      
+      <p>
+        What is happening now is that the sketch begins with preload() loading the CSV file. Though as soon as setup() is executed, column - 
+      </p>
       <p>
         There are
         <a href="https://p5js.org/reference/#/p5.Table">many other methods</a>
