@@ -215,7 +215,9 @@
         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/getString"
             >getString(row, column)</a
-          >: retrieves a String value from the Table's specified row and column. For example, getString(0,0) will retrieve the word "Anshuman", and getString(4,3) will show dumplings
+          >: retrieves a String value from the Table's specified row and column.
+          For example, <i>getString(0,0)</i> will retrieve the word "Anshuman",
+          and <i>getString(3,2)</i> will show "dumplings".
         </li>
         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/getColumnCount"
@@ -224,14 +226,23 @@
           or
           <a href="https://p5js.org/reference/#/p5.Table/getRowCount"
             >getRowCount()</a
-          >: returns the total number of columns or rows in a Table
+          >: returns the total number of columns or rows in a Table. It's used
+          in a similar way as array.length.
         </li>
       </ul>
-      <iframe src="https://editor.p5js.org/xinxin/embed/hb73hbbK"></iframe>
-      <p>&#8627; click to randomize sentence</p>
+      <div class="full-width-box">
+        <iframe src="https://editor.p5js.org/xinxin/embed/hb73hbbK"></iframe>
+        <p>&#8627; click to randomize sentence</p>
 
-      <script src="https://gist.github.com/xinemata/aacbce3f23bcddff8b82b8380c7987e5.js"></script>
-
+        <p>
+          In this example, I have used <i>random()</i> to generate a row number
+          within the range of <i>getRowCount()</i> at the start of the sketch as
+          well as when everytime mouse is pressed. 
+        </p>
+      </div>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/aacbce3f23bcddff8b82b8380c7987e5.js"></script>
+      </div>
       <!--             
       <ul>
         <li class="bullet">
