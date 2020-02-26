@@ -283,7 +283,7 @@
           >: retrieves the cell value from the table object
         </li>
 
-        <li class="bullet">
+<!--         <li class="bullet">
           <a href="https://p5js.org/reference/#/p5.Table/addRow">addRow(id)</a>
           or
           <a href="https://p5js.org/reference/#/p5.Table/addColumn"
@@ -299,20 +299,25 @@
           <a href="https://p5js.org/reference/#/p5.Table/removeColumn"
             >addColumn(id)</a
           >: removes a row or a column from the table object
-        </li>
+        </li> -->
       </ul>
-      
+
       <p>
-        As a proof of concept, let's add the lines below to the end of setup() inside the previous code example:
+        As a proof of concept, let's add the lines below to the end of setup()
+        inside the previous code example:
       </p>
-      
+
       <script src="https://gist.github.com/xinemata/ffe3e8bd8d75785e21a245380834581b.js"></script>
-            <a href="https://editor.p5js.org/xinxin/sketches/SBGCIRZo"
+      <a href="https://editor.p5js.org/xinxin/sketches/SBGCIRZo"
         >Link to Source Code</a
       >
-      
+
       <p>
-        What is happening now is that the sketch begins with preload() loading the CSV file. Though as soon as setup() is executed, column - 
+        What is happening now is that the sketch begins with preload() loading
+        the CSV file. Though as soon as setup() is executed, column 0 - row 0 is
+        set to 'Chloe'. You can use set() to do all kinds of things in your
+        sketch, but specifically I'd also like to share the option of letting
+        users enter words into the sketch to replace the table cell. 
       </p>
       <p>
         There are
