@@ -182,8 +182,8 @@
         "sentence flip book" children often use to learn how to construct
         sentences. First, open your desktop spreadsheet software (e.g. Excel) or
         Google spreadsheet, and let's create a couple possible sentences for the
-        flip book. In the example below I'm using a name, a verb, and an object
-        to construct every sentence. Keep in mind that these sentences must
+        flip book. In the example below I'm using a name, a verb, and a food
+        item to construct every sentence. Keep in mind that these sentences must
         follow the rules of modular design, so that different combinations of
         the words would still make out logical sentences.
       </p>
@@ -237,12 +237,17 @@
         <p>
           In this example, I have used <i>random()</i> to generate a row number
           within the range of <i>getRowCount()</i> at the start of the sketch as
-          well as when everytime mouse is pressed. 
+          well as when everytime mouse is pressed. And I use <i>text()</i> three
+          times to load the possible sentences individually:
         </p>
       </div>
       <div class="full-width-box">
         <script src="https://gist.github.com/xinemata/aacbce3f23bcddff8b82b8380c7987e5.js"></script>
       </div>
+      <p>
+        Alternatively, we can put <i>text()</i> into a for Loop so that the code is written more efficiently:
+      </p>
+      <script src="https://gist.github.com/xinemata/c16e3a3b8e64e479e0d33aa836d53f70.js"></script>
       <!--             
       <ul>
         <li class="bullet">
