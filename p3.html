@@ -182,12 +182,15 @@
         "sentence flip book" children often use to learn how to construct
         sentences. First, open your desktop spreadsheet software (e.g. Excel) or
         Google spreadsheet, and let's create a couple possible sentences for the
-        flip book. Keep in mind that these sentences must follow the rules of
-        modular design, so that different combinations of the words would still
-        make out logical sentences. Once you're done with that, download the
-        spreadsheet as a CSV file, and upload it to your p5 sketch folder. When
-        you click on the CSV file inside the p5 editor, you should see something
-        like this:
+        flip book. In the example below I'm using a name, a verb, and an object
+        to construct every sentence. Keep in mind that these sentences must
+        follow the rules of modular design, so that different combinations of
+        the words would still make out logical sentences.
+      </p>
+      <p>
+        Once you're done with that, download the spreadsheet as a CSV file, and
+        upload it to your p5 sketch folder. When you click on the CSV file
+        inside the p5 editor, you should see something like this:
       </p>
       <div class="full-width-box">
         <img
@@ -202,15 +205,32 @@
       </p>
 
       <p>
-        Great! Now let's load the table into the sketch! Inside the p5.Table object, there are a couple things
-        you should know about in order to properly load and display the data:
+        Great! Now let's load the table into the sketch! Just like loading any
+        other files in p5, you need to load the CSV file using
+        <i>function preload()</i>. Also, inside the p5.Table object, there are a
+        couple methods you should know about in order to properly load and
+        display the data:
       </p>
       <ul>
-        <li class="bullet"><a href="https://p5js.org/reference/#/p5.Table/getString">getString(row, column)</a>: retrieves a String value from the Table's specified row and column</li>
-        <li class="bullet"><a href="https://p5js.org/reference/#/p5.Table/getColumnCount">getColumnCount()</a> or <a href="https://p5js.org/reference/#/p5.Table/getRowCount">getRowCount()</a>: returns the total number of columns or rows in a Table</li>
+        <li class="bullet">
+          <a href="https://p5js.org/reference/#/p5.Table/getString"
+            >getString(row, column)</a
+          >: retrieves a String value from the Table's specified row and column. For example, getString(0,0) will retrieve the word "Anshuman", and getString(4,3) will show dumplings
+        </li>
+        <li class="bullet">
+          <a href="https://p5js.org/reference/#/p5.Table/getColumnCount"
+            >getColumnCount()</a
+          >
+          or
+          <a href="https://p5js.org/reference/#/p5.Table/getRowCount"
+            >getRowCount()</a
+          >: returns the total number of columns or rows in a Table
+        </li>
       </ul>
       <iframe src="https://editor.p5js.org/xinxin/embed/hb73hbbK"></iframe>
       <p>&#8627; click to randomize sentence</p>
+
+      <script src="https://gist.github.com/xinemata/aacbce3f23bcddff8b82b8380c7987e5.js"></script>
 
       <!--             
       <ul>
