@@ -12,23 +12,61 @@
       <!-- 1. give your project  a titile -->
 
       <h1>
-        Interactive Typography
+        Experimental Camera
       </h1>
 
+      <body>
+        <h2>White Box</h2>
+        <p>For my project, I wanted to use machine learning api to to detect and map facial features then duplicate/ swap detected subjects. 
+          <br>Additionally, ideal output would be in the style of cubism. <br>
+        </p>
+        <img src = "https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/tech%20-%20page%20125.png?v=1683937435300" alt = "camera whitebox" 
+             width = "fullwidth" height = "fullheight">
+        
+        <br clear="all"><br>
+        <h2>Process</h2>
+          <p>I used Jupyter Notebook and OpenCV (both are relatively new to me) 
+          <br>I initially wrote a script just for camera testing w/ black & white filter.<br>
+          </p>
+          <img src="https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/camTest.png?v=1683938221365" alt = "camTest">
+        
+        <br clear="all"><br>
+        <p>I then played around with defining alll object outlines within camera for a canny edge effect.</p>
+          <img src="https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/cannyEdge.png?v=1683938356854" alt="CannyEdge">
+        
+        <br clear="all"><br>
+        <p>After that, facial recognition was implemented and was able to detect multiple faces.</p>
+          <img src="https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/multiFaceDetect.png?v=1683938364099" alt="multiFaceDetect">
+        
+        <br clear="all"><br>
+        <p>My initial test with replicating detected feature within in bounding boxes failed & resulted in multiplication of boxes but no duplicated detected features. </p>
+          <img src="https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/faceDetect.png?v=1683938727105" alt="FaceDetect">
+        
+        <br clear="all"><br>
+        <p>After some reference look up & experimenting, I was able to duplicate detected facial features, but it is then that python started to repeatedly crash on me, most likely due to over complications with OpenCV :( </p>
+          <img src="https://cdn.glitch.global/43915a8f-0813-432d-bd23-8805ec75833c/multiply_eyes.png?v=1683938382475" alt="multiplied eyes">
+        
+        <br clear="all"><br>
+        <h2>Reflection</h2>
+        <p>I probably won't use OpenCV for similar future endeavors, will try ml5js using a combination of Facemesh & StyleTransfer. </p>
+          
+        
+          
+      </body>
       <!-- 2. embed your p5 sketch -->
-
       <div class="fullwidth">
         <!-- below width and height refers to the dimensions of your sketch-->
 
-        <iframe
+<!--         <iframe
           width="600px"
           height="600px"
-          src="https://preview.p5js.org/tsfycbl/embed/3BghZbnDq"
-        ></iframe>
+          src="https://preview.p5js.org/tsfycbl/embed/aTrhGL38_">
+      </iframe>
         
-        <form action="https://editor.p5js.org/tsfycbl/sketches/3BghZbnDq/" method="get" target="_blank">
-         <button type="submit"> raw code </button>
+         <form action="https://editor.p5js.org/tsfycbl/sketches/aTrhGL38_/" method="get" target="_blank">
+         <button type="submit"> raw code </button> -->
         
       </div>
 
+ 
   </body>
